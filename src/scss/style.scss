@@ -1,0 +1,31 @@
+@import "reset.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import "variables.scss";
+
+@import "mixins.scss";
+
+body {
+    font-size: $fz;
+    color: $mainColor;
+    font-family: $ff;
+    background: $mainBackground;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column
+}
+[class*="_container"]{
+    padding: 0 10px;
+    max-width: $maxWidth;
+    margin: 0 auto
+}
+@import  "header.scss";
+
+@import "main.scss";
+
+@import "footer.scss"
