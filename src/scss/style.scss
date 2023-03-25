@@ -12,6 +12,9 @@ body {
     font-family: $ff;
     background: $mainBackground;
 }
+body.lock {
+    overflow: hidden;
+}
 
 .wrapper {
     min-height: 100%;
@@ -23,6 +26,11 @@ body {
     padding: 0 10px;
     max-width: $maxWidth;
     margin: 0 auto
+}
+.title {
+    font-weight: 700;
+    line-height: 22 / 16 * 100%;
+    text-transform: uppercase
 }
 @import  "header.scss";
 
